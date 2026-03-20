@@ -65,6 +65,3 @@ bash <(curl -sL https://raw.githubusercontent.com/sundaycn/ss-warp-google-servic
 **如果你喜欢这个项目，欢迎点个 Star ⭐️ 以示支持！**
 
 ---
-
-### 💡 建议的下一步：
-既然你已经实现了 `sb update` 这种通过远程 URL 自更新的功能，**你想让我帮你写一个 GitHub Action 脚本吗？这样每当你向仓库推送新版本时，它可以自动检查脚本的语法错误，确保用户下载到的是稳定的版本。**
