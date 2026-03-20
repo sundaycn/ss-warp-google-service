@@ -104,7 +104,7 @@ ${CYAN}[2/6] 正在下载 Geosite 和 GeoIP 数据...${NC}"
 get_warp_config() {
     echo -e "
 ${CYAN}[3/6] 正在获取 WARP WireGuard 配置...${NC}"
-    local WGCF_URL="https://github.com/ViRb3/wgcf/releases/download/v${WGCF_VERSION}/wgcf_linux_${ARCH_L}"
+    local WGCF_URL="https://github.com/ViRb3/wgcf/releases/download/v${WGCF_VERSION}/wgcf_${WGCF_VERSION}_linux_${ARCH_L}"
     curl -sSL -o ${WGCF_EXEC} "$WGCF_URL" && chmod +x ${WGCF_EXEC}
     echo | ${WGCF_EXEC} register --accept-tos || { echo -e "${RED}错误: WARP 账户注册失败。${NC}"; exit 1; }
     ${WGCF_EXEC} generate || { echo -e "${RED}错误: WARP WireGuard 配置生成失败。${NC}"; exit 1; }
